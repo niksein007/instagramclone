@@ -1,0 +1,8 @@
+.description .profileName{
+    font-weight: bolder;
+}
+.description button{
+    outline: none;
+    color: gray;
+
+}
