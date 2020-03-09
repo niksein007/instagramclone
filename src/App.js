@@ -1,5 +1,12 @@
 import React from 'react';
 import './App.css';
+import Footer from './component/footer';
+import home from './img/home.jpeg';
+import search from './img/search.png';
+import upload from './img/upload.png';
+import like from './img/like.png';
+import profile from './img/profile.png';
+
 import Stories from './component/stories';
 import mark from './images/stories/mark.jpg';
 import abigail from './images/stories/abigail.jpg';
@@ -23,6 +30,14 @@ class App extends React.Component {
 	//constructor(props){
 	//super(props)
 	state = {
+    Footer:[
+    {icon:home}, 
+    {icon:search},
+    {icon:upload},
+    {icon:like},
+    {icon:profile}
+
+  ],
 		upload: [
 			{
 				profilePic: mark,
@@ -200,6 +215,18 @@ class App extends React.Component {
 			</div>
 		);
 	}
+
 }
 
+  render () {
+    const footer = this.state.Footer.map ( (footer, index)=> {
+      return <Footer icon={footer.icon} key={index} />
+    })
+    return (
+      <div className="AppFooter">
+        {footer}
+      </div>
+    );
+  }
+}
 export default App;
