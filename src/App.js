@@ -1,4 +1,13 @@
 import React from 'react';
+// import logo from './logo.svg';
+import './App.css';
+import NavBar from './component/navBar.js';
+import camera from './images/camera.png';
+import arrow from './images/arrowicon.png';
+import insta from './images/insta.png';
+
+
+
 import './App.css';
 import Footer from './component/footer';
 import home from './img/home.jpeg';
@@ -187,6 +196,9 @@ class App extends React.Component {
 	//}
 
 	render() {
+    const footer = this.state.Footer.map ( (footer, index)=> {
+      return <Footer icon={footer.icon} key={index} />
+    })
 		const stories = this.state.upload.map((story, index) => {
 			return <Stories key={index} index={index} profilePic={story.profilePic} profileName={story.profileName} />;
 		});
@@ -209,24 +221,22 @@ class App extends React.Component {
 		// console.log(card)
 		return (
 			<div className="App">
+          <header>
+        <NavBar
+          camera={camera}
+          arrowIcon={arrow}
+          insta={insta} />
+
+      </header>
 				<div className="AppStories">{stories}</div>
 
 				<div className="AppMainCard">{card}</div>
+       {footer}
 			</div>
 		);
 	}
 
 }
 
-  render () {
-    const footer = this.state.Footer.map ( (footer, index)=> {
-      return <Footer icon={footer.icon} key={index} />
-    })
-    return (
-      <div className="AppFooter">
-        {footer}
-      </div>
-    );
-  }
-}
+
 export default App;
