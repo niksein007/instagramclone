@@ -3,4 +3,24 @@
   justify-content: space-between;
   margin-right: 35px;
  
+.AppStories, .mainImg{
+    display: flex;
+    overflow: scroll;
+    
+}
+/* .mainImg{
+    display: flex;
+    
+} */
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.AppStories::-webkit-scrollbar, .mainImg::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Hide scrollbar for IE and Edge */
+.AppStories:-webkit-scrollbar, .mainImg::-webkit-scrollbar {
+  -ms-overflow-style: none;
 }
