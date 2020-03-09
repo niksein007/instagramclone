@@ -1,0 +1,26 @@
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
+
+
+.head .profilePic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.head .profileName{
+    display: block;
+    float: right;
+    margin-top: 10px;
+
+}
+.head .stuff{
+font-size: 35px;
+margin-top: -23px;
+letter-spacing: -2px;
+
+}

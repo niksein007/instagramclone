@@ -1,0 +1,14 @@
+.comment .profileName{
+    font-weight: bold;
+    margin-right: 4px;
+}
+.comment{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+.comment i{
+font-size: small;
+color: grey;
+/* padding-left: 45px; */
+}
