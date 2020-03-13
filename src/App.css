@@ -1,7 +1,9 @@
 .AppFooter {
+  height: 50px;
+  padding-top: 5px;
   display: flex;
-  justify-content: space-between;
-  margin-right: 35px;
+  justify-content: space-around;
+  /* margin-left: 35px; */
 }
  
 .AppStories, .mainImg{
@@ -24,4 +26,9 @@
 /* Hide scrollbar for IE and Edge */
 .AppStories:-webkit-scrollbar, .mainImg::-webkit-scrollbar {
   -ms-overflow-style: none;
+}
+section{
+  overflow: scroll;
+  width: 100vw;
+  height: 530px;
 }
