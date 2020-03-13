@@ -8,7 +8,6 @@ import insta from './images/insta.png';
 
 
 
-import './App.css';
 import Footer from './component/footer';
 import home from './img/home.jpeg';
 import search from './img/search.png';
